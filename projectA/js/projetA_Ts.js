@@ -13,7 +13,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 
     //탭메뉴 공지사항
-    $(".tit span").click(function(){
+    $(".tit li").click(function(){
         $(this).addClass('on').siblings().removeClass('on');
         $("#"+$(this).data('id')).addClass('on').siblings().removeClass('on');
     });

@@ -364,13 +364,47 @@ main .sec01 .inner .title span{
     width: 100%;
     margin: 0;
 }
-.sec05.tit{
-    min-width: 320px;
-}
-.sec05.tit article{
+/*tit*/
+.sec05.tit .tabs {
     width: 100%;
-    margin: 0 auto;
+    cursor: pointer;
 }
+.sec05.tit .tabs li{
+    width: 100%;
+    font-size: 1.4rem;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    position: relative;
+    padding: 0 10px;
+    border: 1px solid #bbb;
+    background-color: #ddd;
+}
+.sec05.tit .tabs li.on{
+    background-color: #fff;
+    border-bottom: none;
+}
+.sec05.tit .tabs li:first-child.on{
+    border-right: none;
+}
+.sec05.tit .tabs li:nth-child(2).on{
+    border-left: none;
+}
+.sec05.tit .tabs li::after{
+    width: 0;
+    height: 4px;
+    position: absolute;
+    top:0;
+    left:0;
+    content: '';
+    background-color: #6b9f32;
+}
+.sec05.tit .tabs li.on::after{
+    width: 100%;     
+    transition: width 0.3s;
+}
+
+/*내용*/
 .sec05 article{
     display: flex;
     justify-content: unset;
@@ -391,6 +425,25 @@ main .sec01 .inner .title span{
     padding: 0 10px;
     
 }
+.sec05.tit article .qna span.on::after,
+.sec05.tit article .news span.on::after{
+    width: 5px;
+    height: 100%;
+    background: #6b9f32;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sec05.tit > article .qna span.on::after{
+    height: 100%;
+    transition: height 0.3s;
+}
+
+.sec05.tit > article .news span.on::after{
+    height: 100%;
+    transition: height 0.5s;
+}
 .sec05 article ul{
     width: 100%;
     height: auto;
@@ -408,10 +461,19 @@ main .sec01 .inner .title span{
     display: flex;
     justify-content: space-between;
 }
-/* .sec05.tit article .plus{
-    transform: scale(0.5);
-    margin: auto 0;
-}  */
+/**/
+.sec05 article .qna{
+
+    border: 1px solid #bbb;
+    border-top: none;
+}
+.sec05 article .news{
+
+    border: 1px solid #bbb;
+    border-top: none;
+}
+
+/**/
 
 .sec05 > article .qna,
 .sec05 > article .news{
@@ -420,48 +482,15 @@ main .sec01 .inner .title span{
     margin: 0; 
     position: relative;
 } 
-.sec05 > article .qna span:nth-child(1)::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 0;
-    background: #fff;
-}
-.sec05 > article .qna span.on:nth-child(1)::before{
-    background: #6b9f32;
-    height: 100%;
-    transition: height 0.3s;
-}
-.sec05 > article .news span:nth-child(1)::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 0;
-    background: #fff;
-}
-.sec05 > article .news span.on:nth-child(1)::before{
-    background: #6b9f32;
-    height: 100%;
-    transition: height 0.5s;
-}
+
+
 .sec05 > article .qna.on,
 .sec05 > article .news.on{
     width: 100%;
     display: flex;
 }
 
-.sec05.tit article .qna,
-.sec05.tit article .news{
-    display: flex;
-    border: 1px solid #bbb;
-    border-bottom: none;
-    height: 50px;
-    align-items: center;
-}
+
 
 /*sec06*/
 

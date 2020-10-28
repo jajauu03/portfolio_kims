@@ -356,20 +356,22 @@ main .sec01 .inner .visual{
     min-width: 640px;
     width: 100%;
 }
-.sec05.tit article{
+.sec05.tit .tabs{
     width: 100%;
     margin: 0 auto;
-}
-.sec05 article{
-    display: flex;
-    justify-content: unset;
-    width: 100%;
-}
-.sec05 article ul li:hover a{
-    font-size: unset;
-    color: unset;
+    padding: 0;
 }
 
+.sec05.tit .tabs li{
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    position: relative;
+    padding: 0 15px;
+  
+}
+
+/*******************************************************/
 .sec05 article .qna{
     display: flex;
     justify-content: space-between ;
@@ -378,14 +380,6 @@ main .sec01 .inner .visual{
 .sec05 article .news{
     display: flex;
     justify-content: space-between;
-}
-.sec05.tit article span{
-    width: 100%;
-    font-size: 1.6rem;
-    font-weight: 500;
-    position: relative;
-    padding: 0 10px;
-
 }
 .sec05 article ul{
     width: 100%;
