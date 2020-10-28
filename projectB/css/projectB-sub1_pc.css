@@ -1,0 +1,318 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* 버티컬 슬라이드 아닌 버전 sub1 */
+
+*{box-sizing: border-box;
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0;  
+    max-width: 1980px;
+}
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color:#555;
+    background: #fff;
+}
+h1{
+    font-size: 2.8rem;
+}
+h4{
+    display: block;
+    text-align: center;
+}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    transition: all 0.5s 0.3s ease-out;
+    z-index: 100;
+    background: #fff;
+}
+a{
+    text-decoration: none;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+li{
+    list-style: none;
+}
+header .logo_box{
+    display: flex;
+  
+}
+header img.pc_t{
+    max-width: 40px;
+    transition: all 300ms ease-out;
+}
+header .logo_box img.mob{
+    display: none;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background: #fff;
+    height: 40px;
+}
+.top > span{
+    margin-top: auto;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.top > span:hover{
+    color: #01a1dd;
+    cursor: pointer;
+}
+input{
+    position: relative;
+    height: 30px;
+    margin: auto 0;
+}
+
+/*nav*/
+
+header .mbt{
+    display: none;
+}
+nav.mgnb{
+    display: none;
+}
+
+.gnb .depth1{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    position: relative;
+    z-index: 50;
+    text-align: center;
+}
+.gnb .depth1 .depth1-t{
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+    z-index: 50;
+    background: #fff;
+    cursor: pointer;
+}
+
+.gnb .depth1 .depth1-t a{
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.gnb .depth1 .depth1-t::before{
+    content: '';
+    position: absolute;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    height: 2px;
+    background: #01a1dd;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.gnb .depth1 .depth1-t a::before,
+.gnb .depth1 .depth1-t:hover::before{ 
+    left: 20px;
+    right: 20px;
+}
+.subgnball{
+    display: flex;
+    height: 0;
+    overflow-y: hidden;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 200;
+    background: #fff;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+.depth2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 150px;
+    list-style: none;
+    text-align: center;
+ 
+}
+.depth2 li{
+
+    height: 40px;
+    line-height: 40px;
+}
+.depth2 a{
+    font-size: 0.95rem;
+}
+.depth2 a:hover{
+    color: #01a1dd;
+}
+.gnb .depth1 .depth1-t:hover ~ .subgnball,
+.gnb .depth1 .subgnball:hover{
+    height: 450px;
+    transform: translateY(0%);
+    transition: all 0.5s;
+}
+
+
+
+
+/*main*/
+.img{
+    width: 100%;
+    height: 350px;
+    background: url(../images/bluemain.jpg);
+    background-position: 50% 80%;
+    background-size: cover;
+}
+
+
+
+/*section*/
+
+section.inner h1{
+    text-align: center;
+    margin: 50px 0 auto;
+}
+section.inner h4{
+    margin: 0 0 50px 0;
+}
+.inner article.incontent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.incontent .con01,
+.incontent .con02,
+.incontent .con03{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.con01 .conimg01{
+    width: 40%;
+    height: 300px;
+    background: url(../images/photo-8.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.con01 p{
+    width: 60%;
+    height: 400px;
+    padding: 20px;
+    font-size: 1.1rem;
+}
+.con02 .conimg02{
+    width: 40%;
+    height: 300px;
+    background: url(../images/photo-5.jpg);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.con02 p{
+    width: 60%;
+    height: 400px;
+    padding: 20px;
+    font-size: 1.1rem;
+}
+.con03 .conimg03{
+    width: 40%;
+    height: 300px;
+    background: url(../images/brew_guide_promo_mobile.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.con03 p{
+    width: 60%;
+    height: 400px;
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+
+
+/*footer*/
+section.footer{
+    width: 100%;
+    height: 231px;
+    position: relative;
+
+    padding-top: 30px;
+    background: #eee;
+    border-top: 1px solid #ccc;
+}
+section.footer .inner{
+    display: flex;
+    flex-direction: column;
+    height: 200px
+}
+.fleft{
+    display: flex;
+    flex-direction: column;
+}
+.fleft .sns{
+    display: flex;
+}
+.fa{
+    font-size: 2rem;
+    margin-right: 10px;
+}
+.search input{
+    position: relative;
+    width: 200px;
+    height: 38px;
+}
+
+.search span i{
+    position: absolute;
+    background: #01a1dd;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 9px 8px 8px;
+
+}
+.inner .fbottom{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.scroll a{
+    position: fixed;
+    right: 20px;
+    top: 70%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.5);
+    z-index: 100;
+}
+.scroll a span  {
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px; 
+    cursor: pointer;
+}

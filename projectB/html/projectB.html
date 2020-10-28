@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!-- 버티컬 슬라이드 아닌 버전 -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+        <title>Blue Bottle</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/projectB_pc.css"/>
+        <link rel="stylesheet"  media="all and (max-width: 1024px)" href="../css/projectB_t.css"/>
+        <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/projectB_m.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>           
+            <div class="logo_box">
+                <a href="projectB.html" ><img width="40px;" src="../images/logo3.jpg" class="pc_t" alt></a>  
+                
+            </div>
+            <div class="mbt">
+                <a href="#" class="mbta">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </a>
+            </div>
+            <div class="top">
+                <span>SUBSCRIBE</span>
+                <span>SIGN IN</span>
+            </div>
+        </header>
+        <nav class="gnb">
+            <ul class="inner menu">
+                <li class="depth1">
+                <div class="depth1-t"><a href="#">BASICS</a></div>
+                    <ul class="depth2">  
+                        <li><a href="../html/projectB-sub1.html" class="first">Our Story</a></li>
+                        <li><a href="#">Our Coffee</a></li>
+                        <li><a href="#">Our Locations</a></li>
+                        <li><a href="#">Cold Brew</a></li> 
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <div class="depth1-t"><a href="#">LEARN</a></div>
+                    <ul class="depth2">  
+                        <li><a href="#">Coffee Match</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>   
+                </li>
+                <li class="depth1">
+                    <div class="depth1-t"><a href="#">SHOP</a></div>
+                    <ul class="depth2">  
+                        <li><a href="#">Coffee Subscriptions</a></li>
+                        <li><a href="#">Coffee</a></li>
+                        <li><a href="#">Cold Brew Collection</a></li>
+                        <li><a href="#">Brewing</a></li>
+                        <li><a href="#">Mugs & More</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Redeem Your Gift</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Corporate Gifting</a></li>
+                    </ul>  
+                </li>
+                <li class="depth1">
+                    <div class="depth1-t"><a href="#">BREW GUIDES</a></div>
+                    <ul class="depth2">  
+                        <li><a href="#">Aeropress</a></li>
+                        <li><a href="#">Chemex</a></li>
+                        <li><a href="#">Cold Brew</a></li>
+                        <li><a href="#">Pour Over</a></li>
+                        <li><a href="#">French Press</a></li>
+                        <li><a href="#">New Orleans-style Iced</a></li>
+                        <li><a href="#">Siphon</a></li>
+                        <li><a href="#">More...</a></li>
+                    </ul>      
+                </li>
+                <li class="depth1">
+                    <div class="depth1-t"><a href="#">VISIT</a></div>
+                    <ul class="depth2">  
+                        <li><a href="#">Northern California</a></li>
+                        <li><a href="#">Southern California</a></li>
+                        <li><a href="#">Boston</a></li>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">Washington, D.C.</a></li>
+                        <li><a href="#">Tokyo</a></li>
+                        <li><a href="#">Kyoto</a></li>
+                        <li><a href="#">Kobe</a></li>
+                        <li><a href="#">Seoul</a></li>
+                        <li><a href="#">Hong Kong</a></li>
+                        <li><a href="#">Yokohama</a></li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <div class="depth1-t"><a href="#">COMPANY</a></div>
+                    <ul class="depth2">  
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- 태블릿모바일 나브 -->
+        <nav class="mgnb">
+            <div class="tbox">
+                <div class="mtop">
+                    <span>SUBSCRIBE</span>
+                    <span>SIGN IN</span>
+                </div>
+                <form action="#" class="pcc">
+                    <div class="selectbox">
+                      <!-- selectbox_current에 tabindex속성을 입력함으로써 Pure 포커싱이 되도록한다 -->
+                      <div class="selectbox_current" tabindex="1">
+                        <div class="selectbox_value">
+                          <input class="selectbox_input" type="radio" id="0" value="ENGLISH" name="language" checked="checked"/>
+                          <span class="selectbox_input-text">ENGLISH</span>
+                        </div>
+                        <div class="selectbox_value">
+                          <input class="selectbox_input" type="radio" id="1" value="한국어" name="language" checked="checked"/>
+                          <span class="selectbox_input-text">한국어</span>
+                        </div>
+                        <div class="selectbox_value">
+                          <input class="selectbox_input" type="radio" id="2" value="日本語" name="language" checked="checked"/>
+                          <span class="selectbox_input-text">日本語</span>
+                        </div>
+                      </div>
+                      <!-- input과 label을 띄워놓아도 같은 id/for값을 유지시켜 짝을 맞춰 선택값과 표출값을 맞춘다 -->
+                      <ul class="selectbox_list">
+                        <li>
+                          <label class="selectbox_option" for="0">ENGLISH</label>
+                        </li>
+                        <li>
+                          <label class="selectbox_option" for="1">한국어</label>
+                        </li>
+                        <li>
+                          <label class="selectbox_option" for="2">日本語</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </form>
+               
+            </div> 
+            <ul class="inner mmenu">
+                <li class="mdepth1">
+                    <div class="mdepth1-t"><a href="#"><span>BASICS</span></a></div>
+                    <ul class="mdepth2">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Our Coffee</a></li>
+                        <li><a href="#">Our Locations</a></li>
+                        <li><a href="#">Cold Brew</a></li> 
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="mdepth1">
+                    <div class="mdepth1-t"><a href="#"><span>LEARN</span></a></div>
+                    <ul class="mdepth2">  
+                        <li><a href="#">Coffee Match</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </li>
+                <li class="mdepth1">
+                    <div class="mdepth1-t"><a href="#"><span>SHOP</span></a></div>
+                    <ul class="mdepth2">  
+                        <li><a href="#">Coffee Subscriptions</a></li>
+                        <li><a href="#">Coffee</a></li>
+                        <li><a href="#">Cold Brew Collection</a></li>
+                        <li><a href="#">Brewing</a></li>
+                        <li><a href="#">Mugs & More</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Redeem Your Gift</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Corporate Gifting</a></li>
+                    </ul>
+                </li>    
+                <li class="mdepth1">
+                    <div class="mdepth1-t"><a href="#"><span>BREW GUIDES</span></a></div>
+                    <ul class="mdepth2">  
+                        <li><a href="#">Aeropress</a></li>
+                        <li><a href="#">Chemex</a></li>
+                        <li><a href="#">Cold Brew</a></li>
+                        <li><a href="#">Pour Over</a></li>
+                        <li><a href="#">French Press</a></li>
+                        <li><a href="#">New Orleans-style Iced</a></li>
+                        <li><a href="#">Siphon</a></li>
+                        <li><a href="#">More...</a></li>
+                    </ul>
+                </li>  
+                <li class="mdepth1">
+                    <div class="mdepth1-t"><a href="#"><span>VISIT</span></a></div>
+                    <ul class="mdepth2">  
+                        <li><a href="#">Northern California</a></li>
+                        <li><a href="#">Southern California</a></li>
+                        <li><a href="#">Boston</a></li>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">Washington, D.C.</a></li>
+                        <li><a href="#">Tokyo</a></li>
+                        <li><a href="#">Kyoto</a></li>
+                        <li><a href="#">Kobe</a></li>
+                        <li><a href="#">Seoul</a></li>
+                        <li><a href="#">Hong Kong</a></li>
+                        <li><a href="#">Yokohama</a></li>
+                    </ul>
+                </li>  
+                <li class="mdepth1">
+                    <div class="mdepth1-t"><a href="#"><span>COMPANY</span></a></div>
+                    <ul class="mdepth2">  
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </li>
+                
+            </ul>  
+        </nav>
+        <section class="visual">
+            <!-- 이미지 opacity 캐러셀 -->
+            <div class="textbox">
+                <span>BLUE BOTTLE</span> 
+                <!-- <p>COFFEE</p> -->
+            </div>
+            
+            <div class="swiper-container vi">
+                <div class="swiper-wrapper">
+                 
+                  <div class="swiper-slide">
+                       <div class="img"></div>
+                    </div>
+                  <div class="swiper-slide"> 
+                       <div class="img2"></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination paging">
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>    
+        </section>
+        <section class="sec02">
+            <div class="s02con inner">
+                <div class="s02tit"  data-aos="fade-up" data-aos-duration="2000" >
+                    <h1>ABOUT US</h1>
+                    <p>당신을 가장 빛나게하는 커피, 블루보틀입니다</p>
+                </div>
+                <div class="conset">
+                    <div class="con01" data-aos="fade-up" data-aos-duration="2300">
+                        <div class="img"></div>
+                        <h2>Our Story</h2>
+                        <span>우리 이야기</span>
+                        <p>2000 년대 초, 캘리포니아 오클랜드에서 시작된 블루보틀. 현재 미국, 일본, 한국 등 전 세계로 뻗어나가는 글로벌 브랜드로 성장하고있습니다.</p>
+                        <button>View More</button>
+                    </div>
+                    <div class="con02" data-aos="fade-down" data-aos-duration="2300">
+                        <div class="img"></div>
+                        <h2>Our Beans</h2>
+                        <span>원두</span>
+                        <p>우리는 전 세계의 농부들과 직접 협력하여 우리가 찾을 수있는 가장 맛있고 지속 가능한 커피를 공급합니다. 그런 다음 정확한 맛 기준에 따라 로스팅하고 좋은 대화와 친절한 조언과 함께 최고의 맛으로 제공합니다.</p>
+                        <button>View More</button>
+                    </div>
+                    <div class="con03" data-aos="fade-up" data-aos-duration="2500">
+                        <div class="img"></div>
+                        <h2>Brewing Guides</h2>
+                        <span>내리는 방법</span>
+                        <p>단일 오리진, 블렌드 및 에스프레소는 다양한 속도로 최고의 맛을 낸 다음 2 ~ 3 일 동안 "최고"범위를 유지합니다. 풍미 진화를 경험하기 위해 다양한 단계에서 커피를 시도하십시오. (그런 다음 규칙을 버리고 자신의 취향을 매핑하십시오.) 로스팅 날짜로부터 2 주 이내에 드십시오.</p>
+                        <button>View More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec03">
+            <div class="s03con inner"  data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
+                    <div class="s03tit">
+                        <h1>OUR COFFEE</h1>
+                        <p>블루보틀의 원두와 상품을 소개합니다</p>
+                    </div>
+                <article class="swiper-container s3">
+                    <button class="btns-prev"></button>
+                    <button class="btns-next"></button>
+                    <div class="swiper-wrapper">
+                        <div class="contents swiper-slide">
+                            <div class="c01">
+                                <div class="leftBoxs">
+                                    <div class="left01">
+                                        <div class="con04">
+                                            <div class="img"></div>
+                                            <div class="text">
+                                                <h3>미얀마에서 원두를 수입</h3>
+                                                <p>블루보틀은 미얀마에서 원두를 수입하여 세심한 관리와 꼼꼼한 절차를 통해 품질을 높입니다</p>
+                                            </div>
+                                            <button>View More</button>
+                                        </div>
+                                        <div class="con05">
+                                            <div class="img"></div>
+                                            <div class="text">
+                                                <h3>최상을 담기위한 노력</h3>
+                                                <p>블루보틀은 한 잔의 커피를 완성하기 위해 15단계를 거칩니다</p>
+                                            </div>
+                                            <button>View More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rightBox">
+                                    <div class="right01">
+                                        <div class="rimg">
+                                            <div class="rtext">
+                                                <h3>Our Beans</h3>
+                                                <span>블루보틀은 최상의 커피를 지향합니다 </span>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contents swiper-slide">
+                            <div class="c01">
+                                <div class="leftBoxs">
+                                    <div class="left02">
+                                        <div class="con06">
+                                            <div class="img"></div>
+                                            <div class="text">
+                                                <h3>콜드브루 컬렉션</h3>
+                                                <p>집에서도 최상의 콜드브루를 즐길 수 있게 준비합니다</p>
+                                            </div>
+                                            <button>View More</button>
+                                        </div>
+                                        <div class="con07">
+                                            <div class="img"></div>
+                                            <div class="text">
+                                                <h3>블루보틀을 캔으로 만나보세요</h3>
+                                                <p>Light함과 Bold함 두가지 맛으로 만나보세요</p>
+                                            </div>
+                                            <button>View More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rightBox">
+                                    <div class="right02">
+                                        <div class="rimg2">
+                                            <div class="rtext">
+                                                <h4>Blue Bottle</h4>
+                                                <h3>Cold Brew</h3>
+                                                <h3>Collection</h3>
+                                                <P>블루보틀은 집에서도 최고의 콜드브루를 추출할 수 있도록 노력합니다 </P>
+                                            </div>
+                                        
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>  
+                    </div> 
+                </article>
+            </div>
+        </section>
+        <section class="sec04">
+            <div class="s04con inner">
+                <div class="s04tit">
+                    <h1>BLUE BOTTLE in KOREA</h1>
+                    <p>2019년 한국 1호점(성수동)을 시작으로 한국에서 새롭게 성장하고있습니다</p>
+                </div>
+                <div class="k-bluebottle" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="wrap">
+                        <div class="circle c01">
+                            <p class="front">블루보틀 <br>삼청카페</p>
+                            <p class="back">
+                                <a href="https://bluebottlecoffee.com/cafes/samcheong" target="blank">삼청카페 <br>삼청한옥</a>
+                                
+                            </p>
+                        </div>
+                        <div class="circle c02">
+                            <p class="front">블루보틀 <br>성수카페</p>
+                            <p class="back">
+                                <a href="https://bluebottlecoffee.com/cafes/seongsu" target="blank">성수</a> <a href="https://bluebottlecoffee.com/cafes/hannam" target="blank">한남</a>커피코리아
+                            </p>
+                        </div>
+                        <div class="circle c03">
+                            <p class="front">블루보틀<br> 압구정카페</p>
+                            <p class="back">
+                                압구정
+                            </p>
+                        </div>
+                        <div class="circle c04">
+                            <p class="front">블루보틀 <br>역삼카페</p>
+                            <p class="back">
+                                역삼
+                            </p>
+                        </div>
+                        <div class="circle c05">
+                            <p class="front">블루보틀 <br> 광화문카페</p>
+                            <p class="back">
+                                광화문카페
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+                <button class="moremapbt" data-aos="fade-up" data-aos-duration="3000">지도보러가기</button>
+                <div class="worldmap">
+                    <a href="https://www.google.com/maps/search/%EB%B8%94%EB%A3%A8%EB%B3%B4%ED%8B%80+%EC%84%9C%EC%9A%B8/@37.5399053,126.9772538,13z/data=!3m1!4b1?hl=ko" target="blank"><div class="mapbt"></div></a> 
+                </div>
+            </div>
+               
+         
+    </div>       
+        </section>
+        <section class="footer">
+            <div class="inner">
+                <div class="fleft">
+                    <div class="connect">
+                        <span>CONNECT WITH US</span>
+                    </div>
+                    <div class="sns">
+                        <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                        <span><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
+                        <span><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
+                    </div>
+                   
+                </div>
+                <div class="fright">
+                    <div class="sign">
+                        <span>STAY UPDATED WITH BLUE BOTTLE COFFEE</span>
+                       
+                    </div>
+                    <div class="search">
+                        <input type="text" name="email" id="email" value="" class="inmail" placeholder="you@yourname.com" aria-label="newsletter-signup-email-text-input">
+                        <span><i class="fa fa-sign-in sq " aria-hidden="true"></i></span>
+                    </div>
+                </div>
+                <div class="fbottom">
+                    <span>© 2020 BLUE BOTTLE COFFEE Inc., All Rights Reserved</span>
+                    <span>Sign up for stories, coffee tips, and brewing equipment</span>
+                </div>
+            </div>
+        </section>
+        <div class="scroll"><a href="#">
+            <span >TOP</span></a>
+        </div>
+            
+
+    
+
+    <script src="../js/jquery-2.2.4.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/project_B_RE-1.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+    
+    <script>
+		var swiper = new Swiper('.swiper-container.vi', {
+        spaceBetween: 30,
+        effect: 'fade',
+        autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        
+      },
+    });
+    var swiper = new Swiper('.swiper-container.s3 ', {
+        effect: 'fade',
+        loop: true,
+      navigation: {
+        nextEl: '.btns-next',
+        prevEl: '.btns-prev',
+      },
+    });
+	</script>
+    </body>
+</html>

@@ -1,0 +1,320 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*버티컬슬라이드 아닌버전*/
+body{
+    padding: 0;
+    margin: 0;     
+    min-width: 640px;
+    overflow-x: hidden;
+}
+.inner{
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 90px;
+    padding: 10px 20px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    background: #fff;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2)
+}
+
+header .logo_box{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+header img.pc_t{
+    max-width: 25px;
+    transition: all 300ms ease-out;
+}
+header .mbt {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.mbt > .mbta{
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.mbt > .mbta span{
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    border-radius: 5px;
+    background: #aaa;
+}
+.mbt .mbta span.line1{
+    top: 10px;
+    transition: 0.5s;
+}
+.mbt .mbta span.line2{
+    top: 20px;
+    width: 20px;
+    transition: 0.2s;
+}
+.mbt .mbta span.line3{
+    top: 30px;
+    transition: 0.5s;
+}
+.mbt .mbta.on span.line1{
+    top: 20px;
+    width: 30px;
+    height: 2px;
+    transform: rotate(225deg);
+}
+.mbt .mbta.on span.line2{
+    top: 20px;
+    opacity:0;
+}
+.mbt .mbta.on span.line3{
+    top: 20px;
+    width: 30px;
+    height: 2px;
+    transform: rotate(-225deg);
+}
+.top{
+    display: none;
+}
+/* t,m nav */
+nav.gnb{
+    display: none;
+}
+
+.mgnb .inner{
+    min-width: 640px;
+}
+
+.tbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px 5px 10px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.mtop{
+    display: flex;
+    flex-direction: column;
+}
+.mtop span{ 
+    color: #01a2dda4;
+    cursor: pointer;
+}
+/*셀렉박스*/
+.selectbox{
+    position: relative;
+    width:150px;
+    font-size: 1rem;
+    z-index: 1;
+}
+.selectbox_current{
+    position: relative;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+    cursor: pointer; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: #ccc;
+}
+ 
+.selectbox_value{ display: flex; }
+.selectbox_input-text{
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background-color: #fff;
+}
+.selectbox_input{ display: none; }
+.selectbox_input:checked + .selectbox_input-text{ display: block; }
+  
+  /* 옵션값 디자인 설정 */
+.selectbox_list{
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    opacity: 0;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+}
+.selectbox_option{
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+}
+.selectbox_option:hover,
+.selectbox_option:focus{
+    color: #fff;
+  
+}
+  /* selectbox_current에 tabindex속성을 입력함으로써 Pure 포커싱이 되도록한다 */
+.selectbox_current:focus + .selectbox_list{
+    opacity: 1;
+}
+.selectbox_current:focus + .selectbox_list .selectbox_option{
+    cursor: pointer;
+}
+.selectbox_current::after{
+    position: absolute;
+    content: "\25BE";
+    top: 50%;
+    right: 15px;
+    width: 20px;
+    font-size: 1.5rem;
+    color: #bbb;
+    transform: translateY(-50%);
+    transition: 0.1s ease;
+}
+.selectbox_current:focus::after{
+    transform: translateY(-50%) rotate(180deg);
+}
+
+  /************************************************/
+
+
+.mgnb .select_list li.on{
+    background:url(../images/down.png) 50% 50% no-repeat;
+    background-position: 95% center;
+}
+nav.mgnb{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 90px;
+    background: #fff;
+    z-index: 999;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction:column;
+    transform: translateX(+100%);
+    transition: transform 0.5s;
+}
+.mgnb.on{
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+.mgnb .mmenu{
+    display: flex;
+    flex-direction:column;
+    overflow-y: auto;
+}
+.mgnb .mmenu .mdepth1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.mgnb .mmenu .mdepth1 .mdepth1-t{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    background: #fff;
+    padding: 0 50px 10px 10px;
+    background-image: url(../images/1x/baseline_add_black_18dp.png);
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    background-size: 0.9rem auto;
+}
+.mgnb .mmenu .mdepth1 .mdepth1-t.on{
+    background-image: url(../images/1x/baseline_remove_black_18dp.png);
+    transition: all 300ms ease-out;
+}
+.mgnb .mmenu .mdepth1 .mdepth1-t span{
+    font-size: 1rem;
+}
+.mgnb .mmenu .mdepth1 .mdepth2{
+    width: 100%;
+    background: #fff;
+    display: none;
+}
+.mgnb .mmenu .mdepth1 .mdepth2 li{
+    width: 100%;
+    padding: 0 30px;
+}
+.mgnb .mmenu .mdepth1 .mdepth2 li a{
+    font-size: 0.9rem;
+    height: 30px;
+    line-height: 30px;
+}
+
+/*sec02*/
+
+section.sec02{
+    width: 100%;
+    position: relative;
+}
+.s02con .conset{
+    overflow-x: auto;
+}
+.s02con .con01 .img,
+.s02con .con02 .img,
+.s02con .con03 .img{
+    width: 320px;
+}
+.s02con .con01,
+.s02con .con02{
+    margin-right: 20px;
+}
+
+/*sec03*/
+button.btns-prev,
+button.btns-next{
+    position: absolute;
+    left: 25%;
+    bottom: 70px;
+    border: none;
+    cursor: pointer;
+}
+button.btns-prev{
+    position: absolute;
+    right: 100px;
+    bottom: 70px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/prev.png) 0 0 no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 100;
+    left: auto;
+}
+button.btns-next{
+    width: 50px;
+    height: 50px;
+    background: url(../images/next.png) 0 0 no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 100;
+    left: auto;
+    right: 40px;
+}
+
+/*sec04*/
+section.sec04{
+    padding-top: 80px;
+}
+.sec04 .k-bluebottle{
+    display: none;
+}
+button.moremapbt{
+    display: none;
+}
+
+.worldmap {
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+
+}
+/*footer*/
+.inner .fbottom{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}

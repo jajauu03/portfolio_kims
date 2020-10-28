@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+
+/* ie11hack */
+@media all and (-ms-high-contrast:none) {
+
+}
+/* ie10,ie11 hack */
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    main section.sec01 .bgbg.img01,
+    main section.sec01 .bgbg.img02,
+    main section.sec01 .bgbg.img03,
+    main section.sec01 .bgbg.img04{
+        background-size: 0.21%, cover !important; 
+    }
+}
+/*로고 안보이는것(10버전)*/
+
+
+/*나브 안열리는것 */
+
+/*비주얼 사진 패턴 지저분한것*/
+
+
+/*스와이퍼 안먹는것*/
+
+/*sec04 영역 가운데정렬*/
+
+/*sec05 영역 목장소식 space-between 안되는것*/
+
+/*방문 후기 사진 색상 클릭 안된것 어둡게*/
+
+/*더 보러가기 버튼 글자랑 화살표 안겹치게*/

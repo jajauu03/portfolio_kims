@@ -1,0 +1,354 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*버티컬슬라이드 아닌버전*/
+body{
+    padding: 0;
+    margin: 0;     
+    min-width: 320px;
+    overflow-x: hidden;
+}
+.inner{
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 90px;
+    padding: 10px 20px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    background: #fff;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2)
+}
+
+header .logo_box{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+header img.pc_t{
+    max-width: 25px;
+    transition: all 300ms ease-out;
+}
+header .mbt {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.mbt > .mbta{
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.mbt > .mbta span{
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    border-radius: 5px;
+    background: #aaa;
+}
+.mbt .mbta span.line1{
+    top: 10px;
+    transition: 0.5s;
+}
+.mbt .mbta span.line2{
+    top: 20px;
+    width: 20px;
+    transition: 0.2s;
+}
+.mbt .mbta span.line3{
+    top: 30px;
+    transition: 0.5s;
+}
+.mbt .mbta.on span.line1{
+    top: 20px;
+    width: 30px;
+    height: 2px;
+    transform: rotate(225deg);
+}
+.mbt .mbta.on span.line2{
+    top: 20px;
+    opacity:0;
+}
+.mbt .mbta.on span.line3{
+    top: 20px;
+    width: 30px;
+    height: 2px;
+    transform: rotate(-225deg);
+}
+.top{
+    display: none;
+}
+/* t,m nav */
+nav.gnb{
+    display: none;
+}
+
+.mgnb .inner{
+    min-width: 320px;
+}
+
+.tbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px 5px 10px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.mtop{
+    display: flex;
+    flex-direction: column;
+}
+.mtop span{ 
+    color: #01a2dda4;
+    cursor: pointer;
+}
+/*셀렉박스*/
+.selectbox{
+    position: relative;
+    width: 120px;
+    font-size: 1rem;
+    z-index: 1;
+}
+/*sec02*/
+
+section.sec02{
+    width: 100%;
+    position: relative;
+}
+.s02con .conset{
+    overflow-x: auto;
+}
+.s02con .con01 .img,
+.s02con .con02 .img,
+.s02con .con03 .img{
+    width: 320px;
+}
+.s02con .con01,
+.s02con .con02{
+    margin-right: 20px;
+}
+
+/*sec03*/
+
+section.sec03{
+    width: 100%;
+    height: 980px; 
+    position: relative;
+    top: 100vh;
+    padding: 100px 0;
+    background: rgba(0,0,0,0.7);
+}
+section.sec03 .inner{
+    width: 100%;
+}
+.s03con .s03tit{
+    display: block;
+    color: #fff;
+    padding: 0 20px;
+}
+section.sec03 .contents{
+    display: flex;
+
+}
+section.sec03 .contents .c01{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+section.sec03 .contents .leftBoxs{
+    width: 100%;
+    /* height: 300px; */
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.leftBoxs .left01,
+.leftBoxs .left02{
+    height: 500px;
+}
+.leftBoxs .left01 .con04,
+.leftBoxs .left01 .con05,
+.leftBoxs .left02 .con06,
+.leftBoxs .left02 .con07{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 200px;
+    position: relative;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    background: #fff;
+}
+.leftBoxs .left01 .con04 .text,
+.leftBoxs .left01 .con05 .text,
+.leftBoxs .left02 .con06 .text,
+.leftBoxs .left02 .con07 .text{
+    padding: 20px;
+    width: 300px;
+}
+.leftBoxs .left01 .con04 .text h3,
+.leftBoxs .left01 .con05 .text h3,
+.leftBoxs .left02 .con06 .text h3,
+.leftBoxs .left02 .con07 .text h3{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+
+}
+.leftBoxs .left01 .con04 .text p,
+.leftBoxs .left01 .con05 .text p,
+.leftBoxs .left02 .con06 .text p,
+.leftBoxs .left02 .con07 .text p{
+    display: none;
+}
+.leftBoxs .left01 .con04 button,
+.leftBoxs .left01 .con05 button,
+.leftBoxs .left02 .con06 button,
+.leftBoxs .left02 .con07 button{
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+.con04 .img{
+    width: 250px;
+    height: 150px;
+    background-image: url(../images/beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.con05 .img{
+    width: 250px;
+    height: 150px;
+    background-image: url(../images/Coffee+Roasting.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.con06 .img{
+    width: 250px;
+    height: 150px;
+    background-image: url(../images/coldbrew-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.con07 .img{
+    width: 250px;
+    height: 150px;
+    background-image: url(../images/photo-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.sec03 .contents .rightBox{
+    width: 100%;
+    margin: 20px 0 20px;
+    height: 300px;
+    position: relative;
+}
+button.btns-prev,
+button.btns-next{
+    position: absolute;
+    left: 25%;
+    top: 250px;
+    bottom: 70px;
+    border: none;
+    cursor: pointer;
+}
+button.btns-prev{
+    position: absolute;
+    right: 100px;
+    bottom: 70px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/prev.png) 0 0 no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 100;
+    left: auto;
+}
+button.btns-next{
+    width: 50px;
+    height: 50px;
+    background: url(../images/next.png) 0 0 no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 100;
+    left: auto;
+    right: 40px;
+}
+
+.rightBox .right01 .rimg{
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    background-image: url(../images/Myanmar.jpg);
+    background-position: 30% 50% ;
+    background-size: cover;
+    display: flex;
+}
+.rightBox .right02 .rimg2{
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    background-image: url(../images/bluemain.jpg);
+    background-position: 80% 50% ;
+    background-size: cover;
+    display: flex;
+}
+.rightBox .right01 .rimg .rtext,
+.rightBox .right02 .rimg .rtext{
+    display: flex;
+    flex-direction: column;
+}
+.rightBox .right01 .rimg .rtext h3{
+    font-size: 3rem;
+}
+
+.rightBox .right02 .rimg2 .rtext h4{
+    font-size: 2rem;
+    color: #555
+}
+.rightBox .right02 .rimg2 .rtext h3{
+    font-size: 3rem;
+    color: #555;
+}
+.rightBox .right02 .rimg2 .rtext p{
+    color: #555;
+    display: block;
+}
+
+
+/*sec04*/
+section.sec04{
+    width: 100%;
+    height: 800px; 
+    position: relative;
+    top: 100vh;
+    padding-top: 60px;
+}
+section.sec04 .s04con.inner .s04tit{
+    padding: 0 20px;
+}
+.worldmap {
+    position: absolute;
+    right: 0;
+    bottom: 3%;
+
+}
+
+/*footer*/
+.inner .fbottom{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
