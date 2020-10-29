@@ -17,10 +17,12 @@
 body{ 
     min-width: 640px; 
     background: #ccae81;
+ 
 }
 .inner{
     width: 100%;
     margin: 0 auto;
+    
 }
 
 header .inner{
@@ -60,24 +62,42 @@ header .gnb{
 .vertical-slide.s02 .slide-content.inner{
     display: flex;
     flex-direction: column;
-    padding: 160px 0;
+    padding: 160px 30px;
     z-index: 1;
+}
+.vertical-slide.s02 .slide-content.inner h1{
+ 
+    padding-left: 0;
+}
+.portfolios{
+    display: flex;
+    justify-content: center;
+}
+.left img:first-child{
+    width: 30%;
+    border-radius: 15px;
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    
 }
 .right{
     width: 60%;
     color: #fff;
-    padding: 30px;
+  
 }
 .right .bt{
-   
     margin-top: 60px;
-
 }
 /*s03*/
 .vertical-slide.s03 .slide-content.inner{
     display: flex;
     flex-direction: column;
-    padding: 160px 0;
+    padding: 160px 30px;
     z-index: 1;
 }
-/*s04*/
+.vertical-slide.s03 .slide-content.inner h1{
+
+    padding-left: 0;
+}
